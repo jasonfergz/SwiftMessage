@@ -16,7 +16,7 @@
  */
 
 #import "MMXTopicSubscription.h"
-#import "DDXML.h"
+//#import "DDXML.h"
 
 @class NSXMLElement;
 @class MMXTopic;

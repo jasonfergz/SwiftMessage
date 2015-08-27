@@ -1,0 +1,6 @@
+framework module Pods_SwiftMessage {
+  umbrella header "Pods-SwiftMessage-umbrella.h"
+
+  export *
+  module * { export * }
+}

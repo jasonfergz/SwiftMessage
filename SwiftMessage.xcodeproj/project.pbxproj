@@ -14,7 +14,7 @@
 		214E02511B8EBFBA00BC7C7A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 214E024F1B8EBFBA00BC7C7A /* LaunchScreen.xib */; };
 		214E025D1B8EBFBA00BC7C7A /* SwiftMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214E025C1B8EBFBA00BC7C7A /* SwiftMessageTests.swift */; };
 		214E026B1B8EC1E700BC7C7A /* Configurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 214E026A1B8EC1E700BC7C7A /* Configurations.plist */; };
-		C07F8EAA262C90EA62EE0DD9 /* libPods-SwiftMessage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDA27B3C65EA43E599395FD /* libPods-SwiftMessage.a */; };
+		24263D5C755D9BA111D6614A /* Pods_SwiftMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3DBF6AD2967E89E47DCDB6 /* Pods_SwiftMessage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C3DBF6AD2967E89E47DCDB6 /* Pods_SwiftMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		214E02411B8EBFBA00BC7C7A /* SwiftMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		214E02451B8EBFBA00BC7C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		214E02461B8EBFBA00BC7C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		214E026A1B8EC1E700BC7C7A /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configurations.plist; sourceTree = "<group>"; };
 		5C3D819934A5CF4249BB5B4B /* Pods-SwiftMessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMessage.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftMessage/Pods-SwiftMessage.release.xcconfig"; sourceTree = "<group>"; };
 		CF5E4EAC1C473E8EBB92369D /* Pods-SwiftMessage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMessage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftMessage/Pods-SwiftMessage.debug.xcconfig"; sourceTree = "<group>"; };
-		FFDA27B3C65EA43E599395FD /* libPods-SwiftMessage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftMessage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C07F8EAA262C90EA62EE0DD9 /* libPods-SwiftMessage.a in Frameworks */,
+				24263D5C755D9BA111D6614A /* Pods_SwiftMessage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +127,7 @@
 		5A9AD95CDB572D5F716C29D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FFDA27B3C65EA43E599395FD /* libPods-SwiftMessage.a */,
+				0C3DBF6AD2967E89E47DCDB6 /* Pods_SwiftMessage.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,6 +153,7 @@
 				214E023E1B8EBFBA00BC7C7A /* Frameworks */,
 				214E023F1B8EBFBA00BC7C7A /* Resources */,
 				11BA1CB534B5E71153A56C32 /* Copy Pods Resources */,
+				68461B30882FB850B0DC8C57 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +254,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftMessage/Pods-SwiftMessage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68461B30882FB850B0DC8C57 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftMessage/Pods-SwiftMessage-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F561AF3EB682BF34E9CC4D83 /* Check Pods Manifest.lock */ = {
@@ -407,6 +423,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					"$(SDKROOT)/usr/include/libxml2",
+					"$(SDKROOT)/usr/include/libresolv",
+					"$(SDKROOT)/usr/include/libiconv",
+					/tmp/SwiftMessage/modules,
+				);
 				INFOPLIST_FILE = SwiftMessage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -421,6 +444,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					"$(SDKROOT)/usr/include/libxml2",
+					"$(SDKROOT)/usr/include/libresolv",
+					"$(SDKROOT)/usr/include/libiconv",
+					/tmp/SwiftMessage/modules,
+				);
 				INFOPLIST_FILE = SwiftMessage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

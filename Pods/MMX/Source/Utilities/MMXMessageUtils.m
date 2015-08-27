@@ -20,6 +20,8 @@
 #import "MMXConstants.h"
 #import "MMXUtils.h"
 
+#import "DDXML.h"
+
 @implementation MMXMessageUtils
 
 #pragma mark - Extract Data From Message

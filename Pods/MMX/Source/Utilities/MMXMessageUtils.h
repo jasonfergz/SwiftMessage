@@ -17,7 +17,9 @@
 
 
 #import <Foundation/Foundation.h>
-#import "DDXML.h"
+//#import "DDXML.h"
+
+@class NSXMLElement;
 
 @interface MMXMessageUtils : NSObject
 

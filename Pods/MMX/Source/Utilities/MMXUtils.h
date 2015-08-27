@@ -16,10 +16,11 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "DDXML.h"
+//#import "DDXML.h"
 
 @class NSXMLElement;
 @class DDXMLElement;
+@class NSXMLNode;
 
 @interface MMXUtils : NSObject
 

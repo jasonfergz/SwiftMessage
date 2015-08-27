@@ -53,6 +53,7 @@
 #import "NSString+XEP_0106.h"
 
 #import <AssertMacros.h>
+#import "XMPPIDTracker.h"
 
 @import CoreLocation;
 
