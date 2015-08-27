@@ -428,7 +428,7 @@
 					"$(SDKROOT)/usr/include/libxml2",
 					"$(SDKROOT)/usr/include/libresolv",
 					"$(SDKROOT)/usr/include/libiconv",
-					/tmp/SwiftMessage/modules,
+					"\"$(SRCROOT)/modules\"",
 				);
 				INFOPLIST_FILE = SwiftMessage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -449,7 +449,7 @@
 					"$(SDKROOT)/usr/include/libxml2",
 					"$(SDKROOT)/usr/include/libresolv",
 					"$(SDKROOT)/usr/include/libiconv",
-					/tmp/SwiftMessage/modules,
+					"\"$(SRCROOT)/modules\"",
 				);
 				INFOPLIST_FILE = SwiftMessage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
